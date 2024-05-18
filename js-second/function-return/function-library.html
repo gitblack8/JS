@@ -42,7 +42,7 @@
     }
 
     input.onchange = function () {
-      const num = parseFloat(input.value);
+      const num = Number(input.value);
       if (isNaN(num)) {
         para.textContent = "You need to enter a number!";
       } else {
