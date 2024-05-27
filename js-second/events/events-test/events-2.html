@@ -50,10 +50,19 @@
     drawCircle(x, y, size);
 
     // Add your code here
-    window.addEventListener('keydown', (event) => {
-     
-
-      
+        canvas.addEventListener('keydown', (event) => {
+      if (event.key === 'w') {
+        drawCircle('230', '50', size);
+      }  
+      if (event.key === 'a') {
+        drawCircle('50', '150', size);
+      }  
+      if (event.key === 's') {
+        drawCircle('230', '280', size);
+      }   
+      if (event.key === 'd') {
+        drawCircle('430', '150', size);
+      } 
     })
   </script>
   </body>
